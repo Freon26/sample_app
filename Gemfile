@@ -30,6 +30,7 @@ group :test do
   gem 'factory_girl_rails', '4.1.0'
   gem 'cucumber-rails', '1.2.1', :require => false
   gem 'database_cleaner', '0.7.0'
+  gem 'webrat' 
   # gem 'launchy', '2.1.0'
   # gem 'rb-fsevent', '0.9.1', :require => false
   # gem 'growl', '1.0.3'
@@ -39,6 +40,8 @@ group :production do
   gem 'pg', '0.12.2'
 end
 
-group :test do 
-	gem 'webrat' 
+group :development do
+gem 'annotate', 
+    :git => 'git://github.com/jeremyolliver/annotate_models.git', 
+    :branch => 'rake_compatibility'
 end
