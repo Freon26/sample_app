@@ -26,9 +26,9 @@ it "should have a Help Page at '/help'" do
     response.should have_selector('title', :content => "Sign up")    
   end
 
-  it "should have a signinp page at '/signin'" do
-    get '/signup'
-    response.should have_selector('title', :content => "Sign In")    
+  it "should have a signin page at '/signin'" do
+    get '/signin'
+    response.should have_selector('title', :content => "Sign in")    
   end
 
   it "should have the right links on the layout" do
